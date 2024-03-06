@@ -1,7 +1,46 @@
 theme: ["PaperMod"]
 enableRobotsTXT: true
 title: Yibo Wei
+DefaultContentLanguage: en
+languageCode: en-US
 
+languages:
+  en:
+    title: Yibo Wei
+    contentDir: content/en
+    languageName: English
+    menu:
+      main:
+        - identifier: posts
+          name: Posts
+          url: posts
+        - identifier: research
+          name: Research
+          url: research
+        - identifier: tags
+          name: Tags
+          url: tags
+        - identifier: search
+          name: Search
+          url: search
+  zh:
+    title: 魏一博
+    contentDir: content/zh
+    languageName: 中文
+    menu:
+      main:
+        - identifier: posts
+          name: 文章
+          url: posts
+        - identifier: research
+          name: 研究
+          url: research
+        - identifier: tags
+          name: 标签
+          url: tags
+        - identifier: search
+          name: 搜索
+          url: search
 params:
   defaultTheme: auto
   ShowBreadCrumbs: true
@@ -56,21 +95,6 @@ params:
     minMatchCharLength: 0
     # limit: 10 # refer: https://www.fusejs.io/api/methods.html#search
     keys: ["title", "permalink", "summary", "content"]
-
-menu:
-  main:
-    - identifier: posts
-      name: Posts
-      url: posts
-    - identifier: research
-      name: Research
-      url: research
-    - identifier: tags
-      name: Tags
-      url: tags
-    - identifier: search
-      name: Search
-      url: search
 
 outputs:
   home:
