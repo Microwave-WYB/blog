@@ -1,0 +1,79 @@
+theme: ["PaperMod"]
+enableRobotsTXT: true
+title: Yibo Wei
+
+params:
+  defaultTheme: auto
+  ShowBreadCrumbs: true
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowCodeCopyButtons: false
+  ShowWordCount: true
+  ShowRssButtonInSectionTermList: true
+  UseHugoToc: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: false
+  tocopen: false
+  author: Yibo Wei
+
+  homeInfoParams:
+    Title: "Hi there \U0001F44B"
+    Content: Welcome to my blog
+
+  socialIcons:
+    - name: "GitHub"
+      url: "https://github.com/Microwave-WYB"
+
+  profileMode:
+    enabled: false
+    title: "Yibo Wei" # optional default will be site title
+    subtitle: "This is subtitle"
+    imageUrl: "https://lh3.googleusercontent.com/pw/AP1GczOrM_BMBg-bnsj7YL6y8T9S99WlVZZUaGh2gDA9hNfuEfqdbjca2KgmwWv2o8eKSLEyZKsPSJFza1PNJzWIlOziYrOcoN40LZ9h8BNOTvSa6yBE2SuGKKpYjZUwwmv8FUnt3RKY9BO2ImVpVY815XDy=w1888-h1888-s-no?authuser=0"
+    imageTitle: "Profile Picture"
+    imageWidth: 180
+    imageHeight: 180
+    buttons:
+      - name: Posts
+        url: posts
+      - name: Research
+        url: research
+      - name: Tags
+        url: tags
+      - name: Search
+        url: search
+
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    # limit: 10 # refer: https://www.fusejs.io/api/methods.html#search
+    keys: ["title", "permalink", "summary", "content"]
+
+menu:
+  main:
+    - identifier: posts
+      name: Posts
+      url: posts
+    - identifier: research
+      name: Research
+      url: research
+    - identifier: tags
+      name: Tags
+      url: tags
+    - identifier: search
+      name: Search
+      url: search
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON # necessary for search
